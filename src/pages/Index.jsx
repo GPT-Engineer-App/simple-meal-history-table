@@ -35,6 +35,7 @@ const Index = () => {
           <Thead>
             <Tr>
               <Th>Date</Th>
+              <Th>Date</Th>
               <Th>Meal Type</Th>
               <Th>Description</Th>
               <Th>Calories</Th>
@@ -43,7 +44,7 @@ const Index = () => {
           <Tbody>
             {mealHistory.map((meal) => (
               <Tr key={meal.id}>
-                <Td>{meal.date}</Td>
+                <Td>{new Date(meal.date).toLocaleDateString()}</Td>
                 <Td>{meal.mealType}</Td>
                 <Td>{meal.description}</Td>
                 <Td>{meal.calories}</Td>
