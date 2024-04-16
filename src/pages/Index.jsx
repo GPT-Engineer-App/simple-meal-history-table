@@ -35,7 +35,6 @@ const Index = () => {
           <Thead>
             <Tr>
               <Th>Date</Th>
-              <Th>Date</Th>
               <Th>Meal Type</Th>
               <Th>Description</Th>
               <Th>Calories</Th>
