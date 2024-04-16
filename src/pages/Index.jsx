@@ -8,7 +8,7 @@ const Index = () => {
   useEffect(() => {
     const fetchMealHistory = async () => {
       try {
-        const response = await fetch("/api/meal-history");
+        const response = await fetch("/mealhistory");
         const data = await response.json();
         setMealHistory(data);
         setIsLoading(false);
